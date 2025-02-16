@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>펫닥터 홈</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Slick Slider CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/custom.js"></script>
+  </head>
+  <body>
+    <div class="container front">
+      <div class="front-inner">
+        <div class="header-front">
+          <h2 class="logo">펫닥터</h2>
+          <div class="btn-notice">
+            <a href="../html/alram.html">
+              <i class="bi bi-bell"></i>
+              <span class="alt-text">알림</span>
+            </a>
+            <em></em>
+          </div>
+        </div>
+        <div class="front-content">
+          <h3 class="go-to-mypage" onclick="location.href=('../html/mypage.html')">
+            안녕하세요, 하루 집사님
+          </h3>
+          <div class="pet-card-slider">
+            <div class="pet-card-item">
+              <div class="pet-card-item-thum">
+                <img src="../images/mypet-img.jpg" alt="펫이미지">
+              </div>
+              <div class="pet-card-item-desc">
+                <div class="pet-card-info">
+                  <div class="name-gender">
+                    <b>하루</b>
+                    <i class="bi bi-gender-male male"></i>
+                  </div>
+                  <button class="btn-detail">
+                    <i class="bi bi-three-dots-vertical"></i>
+                  </button>
+                </div>
+                <div class="age-species">
+                  <span>16살<em>(2008.07.21)</em></span>
+                  <span>터키쉬앙고라</span>
+                </div>
+                <button class="btn-pet-note" onclick="location.href='../html/petnote.html'">펫수첩</button>
+              </div>
+            </div>
+            <div class="pet-card-item">
+              <div class="pet-card-item-thum">
+                <img src="../images/mypet-img-02.jpg" alt="펫이미지">
+              </div>
+              <div class="pet-card-item-desc">
+                <div class="pet-card-info">
+                  <div class="name-gender">
+                    <b>새삼이</b>
+                    <i class="bi bi-gender-female female"></i>
+                  </div>
+                  <button class="btn-detail">
+                    <i class="bi bi-three-dots-vertical"></i>
+                  </button>
+                </div>
+                <div class="age-species">
+                  <span>12살<em>(2012.05.11)</em></span>
+                  <span>코리안 숏헤어</span>
+                </div>
+                <button class="btn-pet-note" onclick="location.href='../html/petnote-02.html'">펫수첩</button>
+              </div>
+            </div>
+            <div class="pet-card-item pet-card-plus" onclick="location.href=('../html/register-pet.html')">
+              <span>펫 추가하기</span>
+            </div>
+          </div>
+          <div class="shortcut front-shortcut">
+            <div class="shortcut-item">
+              <em><i class="bi bi-building"></i></em>
+              <span>병원찾기</span>
+            </div>
+            <div class="shortcut-item">
+              <em><i class="bi bi-capsule"></i></em>
+              <span>처방기록</span>
+            </div>
+            <div class="shortcut-item">
+              <em><i class="bi bi-clipboard-pulse"></i></em>
+              <span>진료기록</span>
+            </div>
+            <div class="shortcut-item">
+              <em><i class="bi bi-book-half"></i></em>
+              <span>백과사전</span>
+            </div>
+            <div class="shortcut-item">
+              <em><i class="bi bi-patch-question"></i></em>
+              <span>지식IN</span>
+            </div>
+          </div>
+          <div class="front-banner-slider">
+            <a href="../html/doctor-talk.html"><img src="../images/front-banner-01.jpg" alt="반려동물에 대한 모든 궁금증 해결! 닥터톡에서 질문하세요"></a>
+            <a href="../html/front-banner-event.html"><img src="../images/front-banner-02.jpg" alt="내 반려능력을 확인해보세요! 반려인 능력시험 접수하기"></a>
+          </div>
+          <div class="doctor-talk-section">
+            <h3 class="doctor-talk-section-title" onclick="location.href=('../html/doctor-talk.html')">
+              닥터톡 인기 질문
+            </h3>
+            <div class="doctor-talk-slider">
+              <div class="doctor-talk-items">
+                <div class="doctor-talk-item"
+                  onclick="location.href='../html/doctor-talk-detail.html'">
+                  <h4>Q. 고양이가 집안 곳곳에 영역 표시를 해요.</h4>
+                  <p>
+                    입양한지 3개월된 고양이가 집안 이곳저곳에 오줌을 조금씩
+                    싸면서 영역을 표시해요. 화장실도 자주 치워주고 모래도 새로 갈아줬는데 왜 화장실을 안쓰는 건가요?
+                  </p>
+                </div>
+                <div class="doctor-talk-item" onclick="location.href='../html/doctor-talk-detail-03.html'">
+                  <h4>Q. 고양이가 레몬을 싫어하는 이유</h4>
+                  <p>
+                    고양이는 레몬을 싫어해서 근처도 안 오고 그걸로 훈련하는 경우도 있다는데 진짜인가요?
+                    그렇게까지 싫어하는 이유랑, 오렌지나 귤 같은 과일도 싫어하는지 궁금합니다!                    
+                  </p>
+                </div>
+                <div class="doctor-talk-item" onclick="location.href='../html/doctor-talk-detail-02.html'">
+                  <h4>Q. 새끼 고양이 합사하는 방법</h4>
+                  <p>
+                    기존에 있는 고양이는 생후 6개월차인데 생후 2개월된 고양이랑
+                    합사를 하려고 하는데 어떻게 해야 문제없이 생활할 수 있는지
+                    궁금합니다. 합사할때 주의해야할 점이 무엇이있나요?
+                  </p>
+                </div>
+              </div>
+              <div class="doctor-talk-items">
+                <div class="doctor-talk-item">
+                  <h4>Q. 강아지가 자꾸 발을 핥는 이유</h4>
+                  <p>
+                    강아지가 틈만나면 자기 발을 자꾸 햝는데 왜그러는건지 궁금합니다. 발이 아파서 그런걸까요?
+                  </p>
+                </div>
+                <div class="doctor-talk-item" onclick="location.href='../html/doctor-talk-detail.html'">
+                  <h4>Q. 햄스터가 밤에만 활발한 이유</h4>
+                  <p>
+                    햄스터가 낮에는 주로 자고 밤에만 활발하게 움직이는 이유는 무엇인가요? 환경적인 요인과 관련이 있나요? 햄스터의 생활 환경을 어떻게 조성하면 좋을지 궁금합니다
+                  </p>
+                </div>
+                <div class="doctor-talk-item" onclick="location.href='../html/doctor-talk-detail-03.html'">
+                  <h4>Q. 앵무새가 자꾸 깃털을 뽑아요</h4>
+                  <p>
+                    앵무새가 자꾸 자신의 깃털을 뽑는 행동을 보이는 이유는 무엇인가요? 스트레스나 건강 문제와 관련이 있을 수 있다고 들었는데, 이를 해결하기 위해 어떤 조치를 취해야 할까요? 
+                  </p>
+                </div>
+              </div>
+              <div class="doctor-talk-items">
+                <div class="doctor-talk-item" onclick="location.href='../html/doctor-talk-detail-02.html'">
+                  <h4>Q. 햄스터의 식단에 포함해야 할 음식</h4>
+                  <p>
+                    햄스터의 건강을 유지하기 위해 식단에 어떤 음식을 포함해야 하나요? 특정 음식은 피해야 한다고 들었는데, 어떤 음식이 햄스터에게 해로울 수 있는지 궁금합니다. 
+                  </p>
+                </div>
+                <div class="doctor-talk-item" onclick="location.href='../html/doctor-talk-detail.html'">
+                  <h4>Q. 강아지를 집에 처음 데려왔을 때</h4>
+                  <p>
+                    강아지를 집에 처음 데려왔을 때, 새로운 환경에 잘 적응할 수 있도록 도와주는 방법이 궁금합니다. 
+                    강아지가 스트레스를 받지 않고 편안하게 적응할 수 있도록 해야 할 준비사항과 주의해야 할 점은 무엇인가요?
+                  </p>
+                </div>
+                <div class="doctor-talk-item"  onclick="location.href='../html/doctor-talk-detail-02.html'">
+                  <h4>Q. 고양이가 가끔 집사를 물거나 할퀴는 이유</h4>
+                  <p>
+                    고양이가 가끔 저를 물거나 할퀴는 행동을 하는데 이 행동이 단순한 장난인지, 아니면 스트레스나 불만의 표현인지 궁금합니다. 고양이가 이러한 행동을 보일 때 어떻게 반응해야 하며, 이러한 문제를 예방하고 개선하기 위해 어떤 방법을 사용할 수 있을지 알고 싶습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- GNB Includ  -->
+        <div class="gnb-include"></div>
+        <!-- GNB Include -->
+      </div>
+    </div>
+  </body>
+</html>

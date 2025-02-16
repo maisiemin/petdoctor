@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>닥터톡</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Slick Slider CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/custom.js"></script>
+  </head>
+  <body>
+    <div class="container doctor-talk">
+      <div class="doctor-talk-inner">
+        <div class="header-common">
+          <button class="btn-back" onclick="javascript:history.back()">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <h3>닥더톡</h3>
+        </div>
+        <div class="doctor-talk-content">
+          <div class="doctor-talk-search">
+            <input type="text" placeholder="궁금한 것을 검색해보세요">
+          </div>
+          <div class="doctor-talk-qna">
+            <h4 class="qna-title">실시간 닥터톡 Q&A</h4>
+            <input type="radio" id="qna-tab1" name="qna-tab" checked>
+            <input type="radio" id="qna-tab2" name="qna-tab">
+            <input type="radio" id="qna-tab3" name="qna-tab">
+            <input type="radio" id="qna-tab4" name="qna-tab">
+            <input type="radio" id="qna-tab5" name="qna-tab">
+            <div class="qna-tab-btns">
+              <label for="qna-tab1">고양이</label>
+              <label for="qna-tab2">강아지</label>
+              <label for="qna-tab3">햄스터</label>
+              <label for="qna-tab4">기타</label>
+            </div>
+            <div class="qna-tabs">
+              <div class="qna-tab qna-tab1">
+                <div class="qna-tab-item">
+                  <div class="qna-category-bookmark">
+                    <div class="qna-category">
+                      <span>고양이</span>
+                      <span>문제행동</span>
+                    </div>
+                    <span class="btn-book-mark"></span>
+                  </div>
+                  <div class="qna-desc" onclick="location.href='../html/doctor-talk-detail.html'">
+                    <h4>고양이가 집안 곳곳에 영역 표시를 해요.</h4>
+                    <p>
+                      입양한지 3개월된 고양이가 집안 이곳저곳에 오줌을 조금씩
+                      싸면서 영역을 표시해요. 화장실도 자주 치워주고 모래도 새로 갈아줬는데 왜 화장실을 안쓰는 건가요?
+                    </p>
+                  </div>
+                  <div class="qna-info">
+                    <div class="writting-info">
+                      <span>펫마스터</span>
+                      <span>5분전</span>
+                    </div>
+                    <span class="answer-count">답변<em>5</em></span>
+                  </div>
+                </div>
+                <div class="qna-tab-item">
+                  <div class="qna-category-bookmark">
+                    <div class="qna-category">
+                      <span>고양이</span>
+                      <span>생활</span>
+                    </div>
+                    <span class="btn-book-mark"></span>
+                  </div>
+                  <div class="qna-desc" onclick="location.href='../html/doctor-talk-detail-02.html'">
+                    <h4>새끼 고양이 합사하는 방법</h4>
+                    <p>
+                      기존에 있는 고양이는 생후 6개월차인데 생후 2개월된 고양이랑 합사를 하려고 하는데
+                      어떻게 해야 문제없이 생활할 수 있는지 궁금합니다. 합사할때 주의해야할 점이 무엇이있나요?
+                    </p>
+                  </div>
+                  <div class="qna-info">
+                    <div class="writting-info">
+                      <span>고양이 좋아</span>
+                      <span>15분전</span>
+                    </div>
+                    <span class="answer-count">답변<em>2</em></span>
+                  </div>
+                </div>
+                <div class="qna-tab-item">
+                  <div class="qna-category-bookmark">
+                    <div class="qna-category">
+                      <span>고양이</span>
+                      <span>생활</span>
+                    </div>
+                    <span class="btn-book-mark"></span>
+                  </div>
+                  <div class="qna-desc" onclick="location.href='../html/doctor-talk-detail-03.html'">
+                    <h4>고양이가 레몬을 싫어하는 이유</h4>
+                    <p>
+                      고양이는 레몬을 싫어해서 근처도 안 오고 그걸로 훈련하는 경우도 있다는데 진짜인가요?
+                      그렇게까지 싫어하는 이유랑, 오렌지나 귤 같은 과일도 싫어하는지 궁금합니다!
+                    </p>
+                  </div>
+                  <div class="qna-info">
+                    <div class="writting-info">
+                      <span>네잎클로버</span>
+                      <span>50분전</span>
+                    </div>
+                    <span class="answer-count">답변<em>4</em></span>
+                  </div>
+                </div>
+                <div class="qna-tab-item">
+                  <div class="qna-category-bookmark">
+                    <div class="qna-category">
+                      <span>고양이</span>
+                      <span>문제행동</span>
+                    </div>
+                    <span class="btn-book-mark"></span>
+                  </div>
+                  <div class="qna-desc" onclick="location.href='../html/doctor-talk-detail-04.html'">
+                    <h4>고양이가 가끔 집사를 물거나 할퀴는 이유</h4>
+                    <p>
+                      고양이가 가끔 저를 물거나 할퀴는 행동을 하는데 이 행동이 단순한 장난인지, 아니면 스트레스나 불만의 표현인지 궁금합니다. 고양이가 이러한 행동을 보일 때 어떻게 반응해야 하며, 이러한 문제를 예방하고 개선하기 위해 어떤 방법을 사용할 수 있을지 알고 싶습니다.
+                    </p>
+                  </div>
+                  <div class="qna-info">
+                    <div class="writting-info">
+                      <span>마루</span>
+                      <span>1시간전</span>
+                    </div>
+                    <span class="answer-count">답변<em>2</em></span>
+                  </div>
+                </div>
+                <div class="qna-tab-item">
+                  <div class="qna-category-bookmark">
+                    <div class="qna-category">
+                      <span>고양이</span>
+                      <span>생활</span>
+                    </div>
+                    <span class="btn-book-mark"></span>
+                  </div>
+                  <div class="qna-desc" onclick="location.href='../html/doctor-talk-detail-05.html'">
+                    <h4>고양이가 왜 가끔씩 물건을 떨어뜨리나요? </h4>
+                    <p>
+                      책상위에 물건이 올라가 있으면 그걸 발로 밀어서 떨어뜨리고는 하는데, 고양이는 대체 왜 그러는걸까요?
+                    </p>
+                  </div>
+                  <div class="qna-info">
+                    <div class="writting-info">
+                      <span>물냉비냉</span>
+                      <span>3시간전</span>
+                    </div>
+                    <span class="answer-count">답변<em>1</em></span>
+                  </div>
+                </div>
+                <button class="btn-common btn-all">전체보기</button>
+              </div>
+              <div class="qna-tab qna-tab2">
+                <div class="qna-tab-item">
+                    <div class="qna-category-bookmark">
+                      <div class="qna-category">
+                        <span>강아지</span>
+                        <span>문제행동</span>
+                      </div>
+                      <span class="btn-book-mark"></span>
+                    </div>
+                    <div class="qna-desc">
+                      <h4>강아지가 자꾸 발을 핥는 이유</h4>
+                      <p>
+                        강아지가 틈만나면 자기 발을 자꾸 햝는데 왜그러는건지 궁금합니다. 발이 아파서 그런걸까요?
+                      </p>
+                    </div>
+                    <div class="qna-info">
+                      <div class="writting-info">
+                        <span>멍멍이좋아</span>
+                        <span>3분전</span>
+                      </div>
+                      <span class="answer-count">답변<em>2</em></span>
+                    </div>
+                  </div>
+                  <div class="qna-tab-item">
+                    <div class="qna-category-bookmark">
+                      <div class="qna-category">
+                        <span>강아지</span>
+                        <span>생활</span>
+                      </div>
+                      <span class="btn-book-mark"></span>
+                    </div>
+                    <div class="qna-desc">
+                      <h4>강아지를 집에 처음 데려왔을 때</h4>
+                      <p>
+                        강아지가 새로운 환경에 잘 적응하도록 도와주기 위해 어떤 준비를 해야 하나요? 강아지가 불안해하지 않고 편안하게 지낼 수 있도록 환경을 조성하는 방법과 첫 며칠 동안의 돌봄 방법이 궁금합니다. 
+                      </p>
+                    </div>
+                    <div class="qna-info">
+                      <div class="writting-info">
+                        <span>몽자</span>
+                        <span>15분전</span>
+                      </div>
+                      <span class="answer-count">답변<em>3</em></span>
+                    </div>
+                  </div>
+                  <div class="qna-tab-item">
+                    <div class="qna-category-bookmark">
+                      <div class="qna-category">
+                        <span>강아지</span>
+                        <span>생활</span>
+                      </div>
+                      <span class="btn-book-mark"></span>
+                    </div>
+                    <div class="qna-desc">
+                      <h4>강아지가 꼬리를 흔드는 것은 항상 행복하다는 뜻인가요?</h4>
+                      <p>
+                        꼬리를 흔드는 방식이나 위치에 따라 다른 감정을 표현할 수 있다고 들었는데, 꼬리 흔들림이 의미하는 다양한 신호와 이를 올바르게 해석하는 방법에 대해 알고 싶습니다. 강아지의 꼬리 언어를 이해함으로써 감정 상태를 더 잘 파악하고, 적절하게 반응할 수 있는 방법이 궁금합니다.
+                      </p>
+                    </div>
+                    <div class="qna-info">
+                      <div class="writting-info">
+                        <span>세잎클로버</span>
+                        <span>30분전</span>
+                      </div>
+                      <span class="answer-count">답변<em>5</em></span>
+                    </div>
+                  </div>
+                  <div class="qna-tab-item">
+                    <div class="qna-category-bookmark">
+                      <div class="qna-category">
+                        <span>강아지</span>
+                        <span>생활</span>
+                        <span>산책</span>
+                      </div>
+                      <span class="btn-book-mark"></span>
+                    </div>
+                    <div class="qna-desc">
+                      <h4>강아지를 산책시킬 때 주의할 점은 무엇인가요?.</h4>
+                      <p>
+                        강아지의 안전과 건강을 위해 산책 중 어떤 사항에 신경 써야 하며, 예상치 못한 상황에서 어떻게 대처해야 하는지 궁금합니다. 또한, 산책 시간을 언제, 얼마나 해야 하는지, 산책 도중 다른 사람이나 동물과의 상호작용 시 주의해야 할 사항에 대해 알고 싶습니다.
+                      </p>
+                    </div>
+                    <div class="qna-info">
+                      <div class="writting-info">
+                        <span>푸른산호초</span>
+                        <span>55분전</span>
+                      </div>
+                      <span class="answer-count">답변<em>2</em></span>
+                    </div>
+                  </div>
+                  <div class="qna-tab-item">
+                    <div class="qna-category-bookmark">
+                      <div class="qna-category">
+                        <span>강아지</span>
+                        <span>문제행동</span>
+                      </div>
+                      <span class="btn-book-mark"></span>
+                    </div>
+                    <div class="qna-desc">
+                      <h4>강아지가 왜 가끔씩 갑자기 짖거나 으르렁거리나요?</h4>
+                      <p>
+                        가끔 이유없이 허공을 보면서 짖거나 으르렁 거릴 떄가 있는데, 강아지가 가끔씩 갑자기 짖거나 으르렁거리는 이유는 무엇인가요?
+                      </p>
+                    </div>
+                    <div class="qna-info">
+                      <div class="writting-info">
+                        <span>왜짖고그래</span>
+                        <span>1시간전</span>
+                      </div>
+                      <span class="answer-count">답변<em>5</em></span>
+                    </div>
+                  </div>
+                  <button class="btn-common btn-all">전체보기</button>
+              </div>
+              <div class="qna-tab qna-tab3">
+                <div class="qna-tab-item">
+                    <div class="qna-category-bookmark">
+                      <div class="qna-category">
+                        <span>햄스터</span>
+                        <span>생활</span>
+                      </div>
+                      <span class="btn-book-mark"></span>
+                    </div>
+                    <div class="qna-desc">
+                      <h4>햄스터가 밤에만 활발한 이유</h4>
+                      <p>
+                        햄스터가 낮에는 주로 자고 밤에만 활발하게 움직이는 이유는 무엇인가요? 환경적인 요인과 관련이 있나요? 햄스터의 생활 환경을 어떻게 조성하면 좋을지 궁금합니다
+                      </p>
+                    </div>
+                    <div class="qna-info">
+                      <div class="writting-info">
+                        <span>인절미</span>
+                        <span>2분전</span>
+                      </div>
+                      <span class="badge answer-count">답변<em>5</em></span>
+                    </div>
+                  </div>
+                  <div class="qna-tab-item">
+                    <div class="qna-category-bookmark">
+                      <div class="qna-category">
+                        <span>햄스터</span>
+                        <span>문제행동</span>
+                      </div>
+                      <span class="btn-book-mark"></span>
+                    </div>
+                    <div class="qna-desc">
+                      <h4>햄스터가 자꾸 물어 뜯는 이유는 무엇인가요?.</h4>
+                      <p>
+                        집이나 케이지를 계속 물어뜯으려고 하는데 이 행동이 단순한 습성인지, 아니면 스트레스, 불안, 혹은 건강 문제와 관련이 있는지 궁금합니다
+                      </p>
+                    </div>
+                    <div class="qna-info">
+                      <div class="writting-info">
+                        <span>펫마스터</span>
+                        <span>5분전</span>
+                      </div>
+                      <span class="answer-count">답변<em>2</em></span>
+                    </div>
+                  </div>
+                  <div class="qna-tab-item">
+                    <div class="qna-category-bookmark">
+                      <div class="qna-category">
+                        <span>햄스터</span>
+                        <span>생활</span>
+                        <span>식단</span>
+                      </div>
+                      <span class="btn-book-mark"></span>
+                    </div>
+                    <div class="qna-desc">
+                      <h4>햄스터의 식단에 포함해야할 음식</h4>
+                      <p>
+                        햄스터의 건강을 유지하기 위해 식단에 어떤 음식을 포함해야 하나요? 특정 음식은 피해야 한다고 들었는데, 어떤 음식이 햄스터에게 해로울 수 있는지 궁금합니다.
+                      </p>
+                    </div>
+                    <div class="qna-info">
+                      <div class="writting-info">
+                        <span>햄찌좋아</span>
+                        <span>15분전</span>
+                      </div>
+                      <span class="answer-count">답변<em>2</em></span>
+                    </div>
+                  </div>
+                  <div class="qna-tab-item">
+                    <div class="qna-category-bookmark">
+                      <div class="qna-category">
+                        <span>햄스터</span>
+                        <span>문제행동</span>
+                      </div>
+                      <span class="btn-book-mark"></span>
+                    </div>
+                    <div class="qna-desc">
+                      <h4>햄스터가 자꾸 화장실에서 자는 이유는 무엇인가요?</h4>
+                      <p>
+                        햄스터가 자기 집을 냅두고 자꾸 화장실에서 자는데 대체 왜 그런건지 궁금합니다. 집이 마음에 안들어서 시위하는 건가요?
+                      </p>
+                    </div>
+                    <div class="qna-info">
+                      <div class="writting-info">
+                        <span>파란풍선</span>
+                        <span>2시간전</span>
+                      </div>
+                      <span class="answer-count">답변<em>2</em></span>
+                    </div>
+                  </div>
+                  <div class="qna-tab-item">
+                    <div class="qna-category-bookmark">
+                      <div class="qna-category">
+                        <span>햄스터</span>
+                        <span>생활</span>
+                      </div>
+                      <span class="btn-book-mark"></span>
+                    </div>
+                    <div class="qna-desc">
+                      <h4>햄스터의 수명을 늘리기 위해 어떤 점을 주의해야 하나요?</h4>
+                      <p>
+                        저희집에 있는 햄스터랑 오래오래 살고 싶은데 어떻게 하면 햄스터가 최대한 오래 살 수 있게 할 수 있을까요?
+                      </p>
+                    </div>
+                    <div class="qna-info">
+                      <div class="writting-info">
+                        <span>해피니스</span>
+                        <span>3시간전</span>
+                      </div>
+                      <span class="answer-count">답변<em>2</em></span>
+                    </div>
+                  </div>
+                  <button class="btn-common btn-all">전체보기</button>
+              </div>
+              <div class="qna-tab qna-tab4">
+                <div class="qna-tab-item">
+                    <div class="qna-category-bookmark">
+                      <div class="qna-category">
+                        <span>기타</span>
+                        <span>문제행동</span>
+                      </div>
+                      <span class="btn-book-mark"></span>
+                    </div>
+                    <div class="qna-desc">
+                      <h4>앵무새가 자꾸 깃털을 뽑아요</h4>
+                      <p>
+                        앵무새가 자꾸 자신의 깃털을 뽑는 행동을 보이는 이유는 무엇인가요? 스트레스나 건강 문제와 관련이 있을 수 있다고 들었는데, 이를 해결하기 위해 어떤 조치를 취해야 할까요?
+                      </p>
+                    </div>
+                    <div class="qna-info">
+                      <div class="writting-info">
+                        <span>앵무새좋아</span>
+                        <span>5분전</span>
+                      </div>
+                      <span class="answer-count">답변<em>3</em></span>
+                    </div>
+                  </div>
+                  <div class="qna-tab-item">
+                    <div class="qna-category-bookmark">
+                      <div class="qna-category">
+                        <span>기타</span>
+                        <span>문제행동</span>
+                      </div>
+                      <span class="btn-book-mark"></span>
+                    </div>
+                    <div class="qna-desc">
+                      <h4>고슴도치가 등을 바짝 세우는 이유는 무엇인가요?.</h4>
+                      <p>
+                        고슴도치가 저만보면 등을 바짝 세우고 있는데 스트레스를 받아서 그런걸까요? 어떻게 하면 스트레스를 받지 않게 케어해줄 수 있는지 궁금합니다.
+                      </p>
+                    </div>
+                    <div class="qna-info">
+                      <div class="writting-info">
+                        <span>도치좋아</span>
+                        <span>15분전</span>
+                      </div>
+                      <span class="answer-count">답변<em>5</em></span>
+                    </div>
+                  </div>
+                  <div class="qna-tab-item">
+                    <div class="qna-category-bookmark">
+                      <div class="qna-category">
+                        <span>기타</span>
+                        <span>생활</span>
+                        <span>식단</span>
+                      </div>
+                      <span class="btn-book-mark"></span>
+                    </div>
+                    <div class="qna-desc">
+                      <h4>고슴도치는 어떤 음식을 먹나요? 주의해야 할 음식이 있나요?</h4>
+                      <p>
+                        고슴도치는 처음 키워보는데 고슴도치는 주로 뭘 먹고, 어떤 음식을 좋아하고 싫어하는지 궁금합니다.
+                      </p>
+                    </div>
+                    <div class="qna-info">
+                      <div class="writting-info">
+                        <span>하얀풍선</span>
+                        <span>15분전</span>
+                      </div>
+                      <span class="answer-count">답변<em>6</em></span>
+                    </div>
+                  </div>
+                  <div class="qna-tab-item">
+                    <div class="qna-category-bookmark">
+                      <div class="qna-category">
+                        <span>기타</span>
+                        <span>생활</span>
+                      </div>
+                      <span class="btn-book-mark"></span>
+                    </div>
+                    <div class="qna-desc">
+                      <h4>앵무새가 새로운 사람이나 환경에 적응하도록 도우려면 어떻게 해야 하나요?</h4>
+                      <p>
+                        앵무새가 낯선 사람이나 환경에 대한 두려움을 줄이고, 안정감을 느낄 수 있도록 돕기 위해 어떤 단계들을 밟아야 하는지 궁금합니다. 새로운 상황에 대한 스트레스를 최소화하고, 앵무새가 편안하게 적응할 수 있는 방법과 주의사항에 대해 알고 싶습니다.
+                      </p>
+                    </div>
+                    <div class="qna-info">
+                      <div class="writting-info">
+                        <span>앵무새가되자</span>
+                        <span>1시간전</span>
+                      </div>
+                      <span class="answer-count">답변<em>8</em></span>
+                    </div>
+                  </div>
+                  <div class="qna-tab-item">
+                    <div class="qna-category-bookmark">
+                      <div class="qna-category">
+                        <span>기타</span>
+                        <span>문제행동</span>
+                      </div>
+                      <span class="btn-book-mark"></span>
+                    </div>
+                    <div class="qna-desc">
+                      <h4>고슴도치가 자꾸 숨으려는 이유는 무엇인가요?</h4>
+                      <p>
+                        고슴도치가 계속 어둡거나 좁은 곳만 찾아서 숨어다니는데 스트레스를 받아서 그런 행동을 하는건지
+                        원래 고슴도치의 특성이 그런건지 궁금합니다
+                      </p>
+                    </div>
+                    <div class="qna-info">
+                      <div class="writting-info">
+                        <span>펫마스터</span>
+                        <span>4시간전</span>
+                      </div>
+                      <span class="answer-count">답변<em>2</em></span>
+                    </div>
+                  </div>
+                  <button class="btn-common btn-all">전체보기</button>
+              </div>
+            </div>
+          </div>
+          <div class="doctor-talk-ranking">
+            <h4>답변 채택 랭킹</h4>
+            <div class="doctor-talk-ranking-slider">
+              <div class="doctor-item">
+                <div class="thum">
+                  <img src="../images/doctor-01.jpg" alt="김민수">
+                </div>
+                <div class="desc">
+                  <b>김민수</b>
+                  <span>답변채택<em>246</em></span>
+                </div>
+              </div>
+              <div class="doctor-item">
+                <div class="thum">
+                  <img src="../images/doctor-07.jpg" alt="박수영">
+                </div>
+                <div class="desc">
+                  <b>박수영</b>
+                  <span>답변채택<em>214</em></span>
+                </div>
+              </div>
+              <div class="doctor-item">
+                <div class="thum">
+                  <img src="../images/doctor-03.jpg" alt="최지은">
+                </div>
+                <div class="desc">
+                  <b>최지은</b>
+                  <span>답변채택<em>195</em></span>
+                </div>
+              </div>
+              <div class="doctor-item">
+                <div class="thum">
+                  <img src="../images/doctor-04.jpg" alt="박병길">
+                </div>
+                <div class="desc">
+                  <b>박병길</b>
+                  <span>답변채택<em>172</em></span>
+                </div>
+              </div>
+              <div class="doctor-item">
+                <div class="thum">
+                  <img src="../images/doctor-05.jpg" alt="정영우">
+                </div>
+                <div class="desc">
+                  <b>정영우</b>
+                  <span>답변채택<em>146</em></span>
+                </div>
+              </div>
+              <div class="doctor-item">
+                <div class="thum">
+                  <img src="../images/doctor-02.jpg" alt="최승현">
+                </div>
+                <div class="desc">
+                  <b>최승현</b>
+                  <span>답변채택<em>96</em></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="doctor-talk-writing">
+            <i class="bi bi-pencil"></i>
+          </div>
+        </div>
+        <!-- GNB Includ  -->
+        <div class="gnb-include"></div>
+        <!-- GNB Include -->
+      </div>
+    </div>
+  </body>
+</html>

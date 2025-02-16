@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>닥터톡</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Slick Slider CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/custom.js"></script>
+  </head>
+  <body>
+    <div class="container doctor-talk-detail">
+      <div class="doctoc-talk-detail-inner">
+        <div class="header-common">
+          <button class="btn-back" onclick="javascript:history.back()">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <h3>닥더톡</h3>
+        </div>
+        <div class="doctor-talk-detail-content">
+          <div class="question-item">
+            <div class="qna-category-bookmark">
+              <div class="qna-category">
+                <span>고양이</span>
+                <span>생활</span>
+              </div>
+              <span class="btn-book-mark"></span>
+            </div>
+            <div class="qna-desc">
+              <h4>Q. 고양이가 레몬을 싫어하는 이유</h4>
+              <div class="writting-info">
+                <span>네잎클로버</span>
+                <span>50분전</span>
+              </div>
+              <p>
+                고양이는 레몬을 싫어해서 근처도 안 오고 그걸로 훈련하는 경우도 있다는데 진짜인가요?
+                그렇게까지 싫어하는 이유랑, 오렌지나 귤 같은 과일도 싫어하는지 궁금합니다!
+              </p>
+            </div>
+            <div class="question-detail">
+              <div class="answer-comment">
+                <span class="answer-count">답변<em>4</em></span>
+                <span class="comment-count">댓글<em>3</em></span>
+              </div>
+              <div class="question-btns">
+                <button class="btn-share"><i class="bi bi-reply"></i></button>
+                <button class="btn-detail">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="answer-item">
+            <div class="answer-doctor">
+              <div class="thum">
+                <img src="../images/doctor-04.jpg" alt="이진희 수의사">
+              </div>
+              <div class="desc">
+                <h4>이진희 수의사<span>5분전</span></h4>
+              </div>
+            </div>
+            <div class="answer-desc">
+              <b>A.</b>
+              <p>
+                많은 고양이가 레몬과 같은 시트러스 계열의 냄새를 싫어하는 것으로 알려져 있습니다. 이 때문에 고양이가 접근하지 않았으면 하는 장소에 레몬 껍질이나 레몬즙을 뿌리는 방법이 훈련에 사용되기도 합니다. 고양이는 후각이 매우 예민한 동물로, 강한 시트러스 향이 불쾌하게 느껴져 그 냄새가 나는 곳을 피하려고 합니다. 하지만 모든 고양이가 같은 반응을 보이는 것은 아니므로, 효과는 개체마다 다를 수 있습니다.
+              </p>
+            </div>
+            <div class="answer-detail">
+              <div class="selected-answer">질문자가 채택한 답변이에요.</div>
+              <div class="answer-btns">
+                <span class="btn-like"></span>
+                <button class="btn-share"><i class="bi bi-reply"></i></button>
+                <button class="btn-detail">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="answer-item">
+            <div class="answer-doctor">
+              <div class="thum">
+                <img src="../images/doctor-02.jpg" alt="김민석 수의사">
+              </div>
+              <div class="desc">
+                <h4>김민석 수의사<span>55분전</span></h4>
+              </div>
+            </div>
+            <div class="answer-desc">
+              <b>A.</b>
+              <p>
+                고양이가 레몬 냄새를 싫어하는 이유는 그 강한 산성과 향 때문입니다. 고양이의 후각은 매우 민감하여, 시트러스 향의 강한 화학적 성분이 불편하게 느껴질 수 있습니다. 이로 인해 레몬을 포함한 대부분의 시트러스 과일, 즉 오렌지, 귤, 라임 같은 과일의 냄새도 고양이에게 불쾌감을 줄 수 있습니다. 
+              </p>
+            </div>
+            <div class="answer-detail">
+              <div class="answer-btns">
+                <span class="btn-like"></span>
+                <button class="btn-share"><i class="bi bi-reply"></i></button>
+                <button class="btn-detail">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="answer-item">
+            <div class="answer-doctor">
+              <div class="thum">
+                <img src="../images/doctor-01.jpg" alt="김지수 수의사">
+              </div>
+              <div class="desc">
+                <h4>김지수 수의사<span>1시간전</span></h4>
+              </div>
+            </div>
+            <div class="answer-desc">
+              <b>A.</b>
+              <p>
+                오렌지나 귤 같은 과일도 고양이가 싫어하는 시트러스 계열에 속합니다. 이러한 과일들 역시 고양이에게는 강한 냄새로 인식되며, 피하고 싶어하는 반응을 보일 수 있습니다. 따라서 레몬과 마찬가지로 오렌지나 귤의 껍질이나 즙을 이용해 고양이가 접근하지 않기를 원하는 장소에 사용할 수 있습니다. 다만, 이러한 방법이 고양이에게 스트레스를 줄 수 있으므로 사용 시 주의가 필요합니다.
+
+              </p>
+            </div>
+            <div class="answer-detail">
+              <div class="answer-btns">
+                <span class="btn-like"></span>
+                <button class="btn-share"><i class="bi bi-reply"></i></button>
+                <button class="btn-detail">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="answer-hide">
+            <div class="answer-item">
+                <div class="answer-doctor">
+                  <div class="thum">
+                    <img src="../images/doctor-05.jpg" alt="최주혁 수의사">
+                  </div>
+                  <div class="desc">
+                    <h4>최주혁 수의사<span>1시간전</span></h4>
+                  </div>
+                </div>
+                <div class="answer-desc">
+                  <b>A.</b>
+                  <p>
+                    고양이의 후각은 매우 예민해서 시트러스 계열의 과일뿐만 아니라 강한 향을 가진 다른 물질들에도 민감하게 반응할 수 있습니다. 그러나 고양이가 싫어하는 냄새를 훈련 목적으로 사용할 때는 고양이의 감정과 스트레스를 고려해야 합니다. 지나치게 강한 향이 고양이에게 불편함이나 불안을 초래할 수 있으므로, 상황에 맞게 적절하게 사용하는 것이 중요합니다. 고양이가 특정 행동을 하지 않도록 유도하려면, 긍정적인 보상 훈련을 병행하는 것이 더 효과적일 수 있습니다.
+                  </p>
+                </div>
+                <div class="answer-detail">
+                  <div class="answer-btns">
+                    <span class="btn-like"></span>
+                    <button class="btn-share"><i class="bi bi-reply"></i></button>
+                    <button class="btn-detail">
+                      <i class="bi bi-three-dots-vertical"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <button class="btn-all-answer">답변 전체보기</button>
+        </div>
+        <!-- GNB Includ  -->
+        <div class="gnb-include"></div>
+        <!-- GNB Include -->
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+/* Font Icon CDN */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Font Family CDN */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@font-face {
+    font-family: 'GeekbleMalang2WOFF2';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/GeekbleMalang2WOFF2.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /* Font Family */
+    --logo-kr: 'GeekbleMalang2WOFF2';
+    --main-kr: 'NEXON Lv2 Gothic';
+    --secondary-kr: "Noto Sans KR", sans-serif;
+
+    /* Object Color */
+    --dark-purple: #7D7CFD;
+    --light-purple: #AAAAFC;
+    --gloudy-purple: #E6E6FB;
+    --white-gray: #d3d3d3;
+
+    /* Text Color */
+    --dark-black: #333333;
+    --light-black: #555555;
+    --dark-gray: #777777;
+    --light-gray: #999999;
+    --silver-gray: #c0c0c0;
+    --gloudy-gray: #eeeeee;
+    --gainsboro: #dcdcdc;
+}

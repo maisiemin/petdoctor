@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>닥터톡</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Slick Slider CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/custom.js"></script>
+  </head>
+  <body>
+    <div class="container doctor-talk-detail">
+      <div class="doctoc-talk-detail-inner">
+        <div class="header-common">
+          <button class="btn-back" onclick="javascript:history.back()">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <h3>닥더톡</h3>
+        </div>
+        <div class="doctor-talk-detail-content">
+          <div class="question-item">
+            <div class="qna-category-bookmark">
+              <div class="qna-category">
+                <span>고양이</span>
+                <span>문제행동</span>
+              </div>
+              <span class="btn-book-mark"></span>
+            </div>
+            <div class="qna-desc">
+              <h4>Q. 고양이가 집안 곳곳에 영역 표시를 해요.</h4>
+              <div class="writting-info">
+                <span>펫마스터</span>
+                <span>5분전</span>
+              </div>
+              <p>
+                입양한지 3개월된 고양이가 집안 이곳저곳에 오줌을 조금씩 싸면서
+                영역을 표시해요. 화장실도 자주 치워주고 모래도 새로 갈아줬는데 왜 화장실을 안쓰는 건가요?
+              </p>
+            </div>
+            <div class="question-detail">
+              <div class="answer-comment">
+                <span class="answer-count">답변<em>5</em></span>
+                <span class="comment-count">댓글<em>6</em></span>
+              </div>
+              <div class="question-btns">
+                <button class="btn-share"><i class="bi bi-reply"></i></button>
+                <button class="btn-detail">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="answer-item">
+            <div class="answer-doctor">
+              <div class="thum">
+                <img src="../images/doctor-01.jpg" alt="김명철 수의사">
+              </div>
+              <div class="desc">
+                <h4>김명철 수의사<span>35분전</span></h4>
+              </div>
+            </div>
+            <div class="answer-desc">
+              <b>A.</b>
+              <p>
+                고양이가 집안 곳곳에 오줌을 조금씩 싸면서 영역을 표시하는 행동은 스트레스나 불안감 때문에 나타날 수 있습니다. 고양이는 새로운 환경에 적응하는 데 시간이 걸리며, 입양 후 3개월이 지나도 여전히 불안을 느낄 수 있습니다. 스트레스 요인을 찾아 제거하고, 고양이가 더 편안하게 느낄 수 있도록 안정감을 주는 환경을 조성하는 것이 중요합니다.
+              </p>
+            </div>
+            <div class="answer-detail">
+              <div class="selected-answer">질문자가 채택한 답변이에요.</div>
+              <div class="answer-btns">
+                <span class="btn-like"></span>
+                <button class="btn-share"><i class="bi bi-reply"></i></button>
+                <button class="btn-detail">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="answer-item">
+            <div class="answer-doctor">
+              <div class="thum">
+                <img src="../images/doctor-06.jpg" alt="김민석 수의사">
+              </div>
+              <div class="desc">
+                <h4>김민석 수의사<span>55분전</span></h4>
+              </div>
+            </div>
+            <div class="answer-desc">
+              <b>A.</b>
+              <p>
+                화장실을 자주 치워주고 모래를 새로 갈아줬음에도 불구하고 고양이가 화장실을 사용하지 않는 이유는 화장실 위치나 종류에 대한 선호도가 다를 수 있기 때문입니다. 고양이는 화장실의 위치나 모래 종류에 민감할 수 있으며, 적절한 장소에 화장실을 배치하고 고양이가 선호하는 모래를 찾아 사용하는 것이 필요합니다. 여러 종류의 모래를 시도해 보거나 화장실의 위치를 바꿔보는 것도 도움이 될 수 있습니다.
+              </p>
+            </div>
+            <div class="answer-detail">
+              <div class="answer-btns">
+                <span class="btn-like"></span>
+                <button class="btn-share"><i class="bi bi-reply"></i></button>
+                <button class="btn-detail">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="answer-item">
+            <div class="answer-doctor">
+              <div class="thum">
+                <img src="../images/doctor-03.jpg" alt="박지후 수의사">
+              </div>
+              <div class="desc">
+                <h4>박지후 수의사<span>1시간전</span></h4>
+              </div>
+            </div>
+            <div class="answer-desc">
+              <b>A.</b>
+              <p>
+                고양이가 화장실을 사용하지 않고 영역 표시를 하는 이유는 다른 동물이나 사람에 대한 경계심 때문일 수 있습니다. 만약 집안에 다른 고양이나 동물이 있다면, 고양이가 자신의 영역을 지키기 위해 오줌으로 표시하는 행동을 할 수 있습니다. 이 경우, 고양이의 스트레스를 줄이기 위해 각 고양이에게 충분한 개인 공간을 제공하고, 서로의 영역이 겹치지 않도록 주의해야 합니다.
+              </p>
+            </div>
+            <div class="answer-detail">
+              <div class="answer-btns">
+                <span class="btn-like"></span>
+                <button class="btn-share"><i class="bi bi-reply"></i></button>
+                <button class="btn-detail">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="answer-hide">
+            <div class="answer-item">
+                <div class="answer-doctor">
+                  <div class="thum">
+                    <img src="../images/doctor-02.jpg" alt="최주혁 수의사">
+                  </div>
+                  <div class="desc">
+                    <h4>최주혁 수의사<span>1시간전</span></h4>
+                  </div>
+                </div>
+                <div class="answer-desc">
+                  <b>A.</b>
+                  <p>
+                    고양이가 화장실 외의 장소에 오줌을 싸는 이유는 건강 문제일 수도 있습니다. 요로 감염, 방광염, 신장 문제와 같은 질환이 있을 경우, 고양이는 화장실을 사용하는 데 불편함을 느끼고 다른 장소에 오줌을 싸는 행동을 보일 수 있습니다. 이런 경우에는 즉시 수의사와 상담하여 건강 상태를 점검하고, 필요한 치료를 받아야 합니다.
+                  </p>
+                </div>
+                <div class="answer-detail">
+                  <div class="answer-btns">
+                    <span class="btn-like"></span>
+                    <button class="btn-share"><i class="bi bi-reply"></i></button>
+                    <button class="btn-detail">
+                      <i class="bi bi-three-dots-vertical"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="answer-item">
+                <div class="answer-doctor">
+                  <div class="thum">
+                    <img src="../images/doctor-05.jpg" alt="김지수 수의사">
+                  </div>
+                  <div class="desc">
+                    <h4>김지수 수의사<span>15분전</span></h4>
+                  </div>
+                </div>
+                <div class="answer-desc">
+                  <b>A.</b>
+                  <p>
+                    고양이가 집안 곳곳에 오줌을 싸는 것은 자신의 영역을 강조하기 위한 행동일 수 있습니다. 새로운 환경에서 고양이는 자신만의 안전한 공간을 확보하려는 본능을 가지며, 이로 인해 영역 표시 행동이 나타날 수 있습니다. <br>이 경우, 고양이의 영역감을 존중해주고, 특정한 장소에 오줌을 싸는 것을 방지하기 위해 페로몬 스프레이를 사용하거나, 그 장소에 고양이의 밥그릇을 놓아 긍정적인 경험을 형성하게 하는 방법도 고려해 볼 수 있습니다.
+                  </p>
+                </div>
+                <div class="answer-detail">
+                  <div class="answer-btns">
+                    <span class="btn-like"></span>
+                    <button class="btn-share"><i class="bi bi-reply"></i></button>
+                    <button class="btn-detail">
+                      <i class="bi bi-three-dots-vertical"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <button class="btn-all-answer">답변 전체보기</button>
+        </div>
+        <!-- GNB Includ  -->
+        <div class="gnb-include"></div>
+        <!-- GNB Include -->
+      </div>
+    </div>
+  </body>
+</html>

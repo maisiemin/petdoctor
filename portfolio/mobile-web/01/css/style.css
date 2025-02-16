@@ -1,0 +1,1460 @@
+/* Import Local CSS */
+@import url(reset.css);
+@import url(variables.css);
+
+/* Common CSS */
+body {
+  font-family: var(--secondary-kr);
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  padding-top: 50px;
+}
+.container.preloading {
+  padding: 0;
+}
+h2.logo {
+  font-family: var(--logo-kr);
+  font-size: 64px;
+}
+
+/* Common Header */
+.header-common {
+  display: flex;
+  height: 40px;
+  font-family: var(--main-kr);
+}
+.btn-back {
+  background-color: transparent;
+  font-size: 22px;
+  position: absolute;
+  left: 5px;
+  line-height: 40px;
+}
+.btn-detail {
+  background-color: transparent;
+  font-size: 15px;
+  color: var(--dark-gray);
+}
+.header-common h3 {
+  font-weight: 600;
+  margin: auto;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+/* GNB */
+.gnb {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  background-color: #fff;
+  border-top: 1px solid var(--gainsboro);
+  font-family: var(--main-kr);
+}
+.gnb a {
+  display: inline-block;
+  text-align: center;
+  color: var(--dark-gray);
+}
+.gnb a i {
+  font-size: 23px;
+  display: inline-block;
+  height: 28px;
+}
+.gnb a:first-child i,
+.gnb a:last-child i {
+  font-size: 25px;
+}
+.gnb a:nth-child(2) i {
+  transform: translateY(1px);
+}
+.gnb a span {
+  display: block;
+  font-size: 12px;
+}
+
+/* GNB Icon Color */
+.alram .gnb-home,
+.front .gnb-home,
+.event-page .gnb-home,
+.mypage .gnb-mypage,
+.petnote .gnb-petnote,
+.doctor-talk .gnb-doctortalk,
+.doctor-talk-detail .gnb-doctortalk {
+  color: var(--dark-purple);
+}
+
+/* Custom Check Box  */
+input[type="checkbox"] {
+  display: none;
+}
+.custom-chk:after {
+  content: "\F26B";
+  display: inline-block;
+  font-family: bootstrap-icons;
+  font-style: normal;
+  margin-right: 3px;
+  transform: translateY(2px);
+}
+input[type="checkbox"]:checked ~ .custom-chk:after,
+input[type="radio"]:checked ~ .custom-chk:after {
+  content: "\F26A";
+  color: var(--dark-purple);
+}
+
+/* Common Button */
+.btn-common {
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+}
+.shortcut {
+  display: flex;
+}
+.shortcut-item {
+  text-align: center;
+}
+.shortcut-item em {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  line-height: 56px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  box-shadow: 0 0 2px 0px rgb(0, 0, 0, 0.25);
+}
+.shortcut-item em i {
+  font-size: 24px;
+  color: var(--dark-purple);
+}
+.shortcut-item span {
+  display: block;
+  font-size: 12px;
+  color: var(--dark-black);
+}
+
+/* ##### Preloading ##### */
+.preloading-inner {
+  background-color: var(--dark-purple);
+  height: inherit;
+  position: relative;
+}
+.preloading-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+.preloading-heading span {
+  color: var(--gainsboro);
+  font-weight: 300;
+  font-family: var(--main-kr);
+}
+.preloading-heading .logo {
+  margin-top: -8px;
+}
+
+/* ##### Sign In ##### */
+.signin-inner {
+  position: relative;
+}
+.signin-content {
+ padding: 0 20px;
+ margin-top: 55px;
+}
+.signin-field {
+  overflow: hidden;
+}
+.signin-field input[type="text"],
+.signin-field input[type="password"] {
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--gainsboro);
+  transition: 0.35s;
+}
+.signin-field input[type="text"]::placeholder,
+.signin-field input[type="password"]::placeholder {
+  color: var(--gainsboro);
+  transition: 0.35s;
+  padding-left: 5px;
+}
+.signin-field input[type="text"]:focus::placeholder,
+.signin-field input[type="password"]:focus::placeholder {
+  opacity: 0;
+}
+.signin-field input[type="text"]:focus,
+.signin-field input[type="password"]:focus {
+  border-color: var(--dark-purple);
+}
+.signin-field label {
+  float: right;
+  font-size: 14px;
+  color: var(--light-black);
+}
+.signin-btns {
+  margin-top: 45px;
+}
+.btn-signin {
+  background-color: var(--dark-purple);
+  color: #fff;
+}
+.btn-signup {
+  background-color: #fff;
+  border: 1px solid var(--dark-purple);
+  color: var(--dark-purple);
+  margin-top: 15px;
+}
+.signin-social {
+  margin-top: 70px;
+  text-align: center;
+}
+.signin-social span {
+  font-size: 13px;
+  color: var(--light-black);
+  display: block;
+  position: relative;
+}
+.signin-social span:before,
+.signin-social span:after {
+  content: "";
+  width: 40%;
+  height: 1px;
+  background-color: var(--gainsboro);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.signin-social span:before {
+  left: 0;
+}
+.signin-social span:after {
+  right: 0;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+.signup-find {
+  text-align: center;
+  font-size: 13px;
+  color: var(--light-black);
+  margin-top: 65px;
+}
+.signup-find a:first-child:after {
+  content: "|";
+  margin-left: 5px;
+  margin-right: 3px;
+  font-size: 12px;
+}
+
+/* ##### Sign Up ##### */
+.signup-content {
+  padding: 20px;
+}
+.signup-field input {
+  border: 1px solid var(--gainsboro);
+  height: 45px;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: 0.35s;
+}
+.signup-field input::placeholder {
+  transition: 0.35s;
+  color: var(--gainsboro);
+}
+.signup-field input:focus::placeholder {
+  opacity: 0;
+}
+.signup-field input:focus {
+  border-color: var(--dark-purple);
+}
+.signup-field input[type="text"],
+.signup-field input[type="password"] {
+  width: 100%;
+}
+.signup-field b {
+  font-size: 13px;
+  font-weight: normal;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.signup-agreement {
+  margin: 17px 0;
+}
+.signup-agreement li {
+  font-size: 14px;
+  line-height: 2em;
+}
+.signup-agreement .custom-chk {
+  margin-right: 5px;
+}
+.btn-complete-signup {
+  background-color: var(--light-purple);
+  color: #fff;
+  margin-top: 10px;
+}
+.signup-phone {
+  display: flex;
+  gap: 10px;
+}
+.signup-phone input {
+  flex: 2;
+}
+.btn-get-code {
+  flex: 1;
+  height: 45px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid var(--light-black);
+  color: var(--light-black);
+  font-size: 13px;
+}
+
+/* input[type=number] button ui reset */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  appearance: none;
+}
+input[type="number"] {
+  appearance: none;
+}
+
+/* ##### Alram ##### */
+.alram-content {
+  overflow: hidden;
+}
+.btn-clear-all {
+  background-color: transparent;
+  color: var(--dark-gray);
+  font-size: 12px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.alarm-items {
+  margin-top: 40px;
+}
+.alarm-item {
+  border-top: 1px solid var(--gainsboro);
+  display: flex;
+  padding: 20px;
+  height: 100px;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+.alarm-item-icon em {
+  display: inline-block;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 49px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.alarm-item-icon em i {
+  font-size: 22px;
+  color: var(--dark-purple);
+}
+.alram-item-desc {
+  width: calc(100% - 85px);
+}
+.alram-item-desc h4 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6em;
+  font-weight: 550;
+  word-break: keep-all;
+}
+.alram-item-desc span {
+  font-size: 12px;
+  color: var(--light-gray);
+}
+.btn-clear {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  background-color: transparent;
+  font-size: 13px;
+}
+.no-alarm {
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 17px;
+  display: none;
+}
+
+/* ##### Pet Note ##### */
+.petnote-content {
+  font-family: var(--main-kr);
+  padding-bottom: 100px;
+}
+/* pet profile */
+.pet-profile {
+  margin: 0 20px;
+  margin-top: 60px;
+}
+.pet-profile-card {
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  background-color: var(--gloudy-purple);
+  padding: 25px 20px;
+}
+.pet-profile-card-thum {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pet-profile-card-thum img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+.pet-profile-card .btn-detail {
+  position: absolute;
+  top: 15px;
+  right: 6px;
+}
+.pet-profile-card-desc {
+  margin-top: 40px;
+}
+.pet-profile-card-desc h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+.pet-profile-card-desc h4:after {
+  content: "\F282";
+  font-family: bootstrap-icons;
+  position: absolute;
+  font-weight: normal;
+  font-size: 13px;
+  transform: translateY(2px);
+  margin-left: 5px;
+}
+.pet-info span {
+  font-size: 14px;
+  font-weight: 600;
+}
+.pet-info span:after {
+  content: "|";
+  margin-left: 5px;
+  font-size: 9px;
+  display: inline-block;
+  transform: translateY(-1px);
+}
+.pet-info span:nth-of-type(3):after {
+  display: none;
+}
+.pet-info span em {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: normal;
+}
+.pet-info b {
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+  color: var(--light-gray);
+  margin-top: 7px;
+}
+.pet-info .gender {
+  color: royalblue;
+}
+.pet-profile-card-btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.pet-profile-card-btns button {
+  padding: 6px 40px;
+  flex: 1;
+  border-radius: 30px;
+}
+.btn-weight {
+  background-color: transparent;
+  border: 1px solid var(--dark-purple);
+  color: var(--dark-purple);
+}
+.btn-shot-record {
+  background-color: var(--light-purple);
+  color: #fff;
+}
+.btn-add-pet {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid var(--white-gray);
+  border-radius: 5px;
+  color: var(--white-gray);
+  font-family: var(--main-kr);
+  margin-top: 10px;
+}
+.btn-add-pet:before {
+  content: "\F4FA";
+  display: inline-block;
+  font-family: bootstrap-icons;
+  margin-right: 10px;
+  font-size: 15px;
+  transform: translateY(3px);
+}
+/* short cut */
+.petnote-shortcut {
+  margin: 25px 20px;
+  justify-content: space-between;
+}
+/* treatment-history */
+.treatment-history {
+  padding-left: 20px;
+  margin-top: 30px;
+  overflow-x: hidden;
+}
+.treatment-history h4 {
+  font-weight: 600;
+  position: relative;
+}
+.treatment-history h4:after {
+  content: "\F285";
+  font-family: bootstrap-icons;
+  position: absolute;
+  font-size: 13px;
+  font-weight: normal;
+  margin-left: 10px;
+}
+.treatment-history-items {
+  margin-top: 15px;
+  width: 140%;
+}
+.treatment-history-item {
+  width: 160px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid var(--gainsboro);
+  margin-right: 10px;
+}
+.treatment-history-item h5 {
+  font-weight: 600;
+  font-size: 14px;
+}
+.treatment-history-item h5 em {
+  display: block;
+  font-style: normal;
+  font-size: 11px;
+  color: var(--dark-purple);
+  font-weight: normal;
+  margin-top: 3px;
+}
+.treatment-history-doctor {
+  margin-top: 15px;
+  line-height: 1em;
+}
+.treatment-history-doctor span {
+  font-size: 11px;
+  color: var(--light-black);
+  display: block;
+}
+/* Slick Slider Custom (petnote) */
+.treatment-history-items .slick-arrow {
+  display: none !important;
+}
+
+/* ##### My Page ##### */
+.mypage-content {
+  font-family: var(--main-kr);
+  padding-bottom: 100px;
+}
+.mypage-profile-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+.mypage-profile-info-thum {
+  width: 70px;
+  height: 70px;
+}
+.mypage-profile-info-thum img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.mypage-profile-info-desc {
+  flex: 3;
+  position: relative;
+}
+.mypage-profile-info-desc:after {
+  content: "\F285";
+  font-family: bootstrap-icons;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 17px;
+  font-weight: 600;
+}
+.mypage-profile-info-desc h3 {
+  font-weight: 600;
+  margin-bottom: 3px;
+  font-size: 19px;
+}
+.mypage-profile-info-desc h3:after {
+  content: "\F4B5";
+  font-family: bootstrap-icons;
+  color: var(--dark-purple);
+  font-size: 14px;
+  margin-left: 5px;
+  position: absolute;
+  transform: translateY(-2px);
+}
+.mypage-profile-info-desc span {
+  font-size: 13px;
+  color: var(--light-gray);
+}
+.mypage-profile-btns {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--gainsboro);
+}
+.mypage-profile-btns-item {
+  text-align: center;
+  color: var(--dark-gray);
+}
+.mypage-profile-btns-item i {
+  font-size: 28px;
+}
+.mypage-profile-btns-item span {
+  display: block;
+  font-size: 11px;
+  margin-top: 5px;
+}
+.mypage-shortcut a {
+  display: block;
+  border-bottom: 1px solid var(--gainsboro);
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+}
+.mypage-shortcut a:after {
+  content: "\F285";
+  font-family: bootstrap-icons;
+  position: absolute;
+  right: 20px;
+  font-size: 17px;
+}
+.btn-signout {
+  background-color: #fff;
+  border: 1px solid var(--light-gray);
+  color: var(--light-gray);
+  display: block;
+  width: 90%;
+  margin: 25px auto;
+}
+
+/* Mypage - Sign Out Page */
+.mypage-profile-info.mypage-signout {
+  padding: 45px 20px;
+}
+.mypage-profile-info-desc.mypage-signout h3 {
+  font-size: 17px;
+}
+.mypage-profile-info-desc.mypage-signout h3:before {
+  content: "\F8A8";
+  font-family: bootstrap-icons;
+  margin-right: 10px;
+  font-size: 25px;
+  display: inline-block;
+  transform: translateY(5px);
+  font-weight: normal;
+}
+.mypage-profile-info-desc.mypage-signout h3:after {
+  display: none;
+}
+.mypage-signout-outer {
+  padding: 30px 15px;
+}
+.btn-signin.mypage-signout {
+  background-color: #fff;
+  color: var(--dark-purple);
+  border: 1px solid var(--dark-purple);
+  width: 100%;
+}
+
+/* ##### Doctor Talk ##### */
+.doctor-talk-content {
+  padding-bottom: 100px;
+  position: relative;
+}
+.doctor-talk-search {
+  position: relative;
+  margin: 20px;
+}
+.doctor-talk-search:after {
+  content: "\F52A";
+  position: absolute;
+  font-family: bootstrap-icons;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 19px;
+  color: var(--dark-purple);
+}
+.doctor-talk-search input {
+  border: 1px solid var(--light-gray);
+  width: 100%;
+  padding: 12px;
+  padding-left: 20px;
+  border-radius: 30px;
+}
+.doctor-talk-search input::placeholder {
+  color: var(--light-gray);
+  transition: 0.35s;
+}
+.doctor-talk-search input:focus::placeholder {
+  opacity: 0;
+}
+
+/* Doctor Talk QnA Tab */
+.doctor-talk-qna {
+  margin: 15px 20px;
+}
+.qna-title {
+  font-family: var(--main-kr);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.qna-title:before {
+  content: "💌";
+  margin-right: 5px;
+  font-size: 18px;
+  display: inline-block;
+  transform: translateY(1px);
+}
+input[name="qna-tab"] {
+  display: none;
+}
+.qna-tab-btns label {
+  border: 1.4px solid var(--gainsboro);
+  color: var(--light-gray);
+  width: 65px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px;
+  border-radius: 30px;
+}
+input[id="qna-tab1"]:checked ~ .qna-tab-btns label[for="qna-tab1"],
+input[id="qna-tab2"]:checked ~ .qna-tab-btns label[for="qna-tab2"],
+input[id="qna-tab3"]:checked ~ .qna-tab-btns label[for="qna-tab3"],
+input[id="qna-tab4"]:checked ~ .qna-tab-btns label[for="qna-tab4"] {
+  border-color: var(--dark-purple);
+  color: var(--dark-purple);
+}
+.qna-tabs {
+  margin: 15px 0;
+}
+.qna-tabs .qna-tab {
+  display: none;
+}
+input[id="qna-tab1"]:checked ~ .qna-tabs .qna-tab1,
+input[id="qna-tab2"]:checked ~ .qna-tabs .qna-tab2,
+input[id="qna-tab3"]:checked ~ .qna-tabs .qna-tab3,
+input[id="qna-tab4"]:checked ~ .qna-tabs .qna-tab4 {
+  display: block;
+}
+/* QnA Tab Item */
+.qna-tab-item {
+  border: 1px solid var(--light-gray);
+  padding: 15px;
+  margin-bottom: 13px;
+  border-radius: 5px;
+}
+.qna-category-bookmark {
+  display: flex;
+  justify-content: space-between;
+}
+.qna-category {
+  font-size: 12px;
+}
+.qna-category span:after {
+  content: "\F285";
+  font-family: bootstrap-icons;
+  font-size: 8px;
+  margin-left: 3px;
+  display: inline-block;
+  transform: translateY(-1px);
+}
+.qna-category span:last-child:after {
+  display: none;
+}
+.btn-book-mark::after {
+  content: "\F1A2";
+  font-family: bootstrap-icons;
+  font-size: 18px;
+  color: var(--dark-purple);
+}
+.btn-book-mark.active::after {
+  content: "\F199";
+}
+.qna-desc h4 {
+  color: var(--dark-purple);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.qna-desc p {
+  color: var(--light-gray);
+  margin-top: 5px;
+  line-height: 1.5em;
+  font-size: 15px;
+  word-break: keep-all;
+}
+.qna-tab .qna-desc p {
+  line-height: 1.6em;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.qna-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+.writting-info span {
+  font-size: 12px;
+  color: var(--dark-gray);
+  margin-right: 7px;
+}
+.answer-count {
+  font-size: 12px;
+  padding: 2px 15px;
+  border-radius: 30px;
+  background-color: var(--light-purple);
+  color: #fff;
+}
+.answer-count em {
+  margin-left: 15px;
+  font-style: normal;
+}
+.btn-all {
+  background-color: var(--light-purple);
+  color: #fff;
+  font-family: var(--main-kr);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Doctor Talk Ranking */
+.doctor-talk-ranking {
+  overflow-x: hidden;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+.doctor-talk-ranking h4 {
+  font-weight: 600;
+  font-family: var(--main-kr);
+}
+.doctor-talk-ranking h4:before {
+  content: "👑";
+  margin-right: 3px;
+  display: inline-block;
+  transform: translateY(-3px);
+  font-size: 20px;
+}
+.doctor-talk-ranking-slider {
+  margin-top: 15px;
+  width: 120%;
+}
+.doctor-item {
+  text-align: center;
+}
+.doctor-item .thum {
+  width: 85px;
+  height: 85px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+.doctor-item .thum img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+.doctor-item .desc b {
+  display: block;
+  font-weight: normal;
+  font-size: 15px;
+}
+.doctor-item .desc span {
+  font-size: 13px;
+  color: var(--dark-gray);
+}
+.doctor-item .desc span em {
+  font-style: normal;
+  margin-left: 5px;
+  color: var(--dark-purple);
+}
+/* Doctor Talk Writing */
+.doctor-talk-writing {
+  border: 1px solid var(--dark-purple);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  position: fixed;
+  right: 15px;
+  bottom: 95px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.doctor-talk-writing i {
+  color: var(--dark-purple);
+  font-size: 26px;
+}
+
+/* ##### Doctor Talk Detail ##### */
+.doctor-talk-detail-content {
+  padding: 20px 15px;
+  padding-bottom: 100px;
+}
+.question-item {
+  border: 1.5px solid var(--dark-purple);
+  border-radius: 5px;
+  padding: 15px;
+}
+.question-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.answer-comment {
+  display: flex;
+  gap: 10px;
+}
+.comment-count {
+  border: 1px solid var(--dark-purple);
+  font-size: 12px;
+  padding: 2px 15px;
+  border-radius: 30px;
+  color: var(--dark-purple);
+}
+.comment-count em {
+  margin-left: 15px;
+  font-style: normal;
+}
+.btn-share {
+  background-color: transparent;
+  transform: rotateY(180deg);
+}
+.btn-share i {
+  font-size: 20px;
+  color: var(--dark-gray);
+}
+/* Answer */
+.answer-item {
+  border: 1px solid var(--light-gray);
+  padding: 15px;
+  margin-top: 12px;
+  border-radius: 5px;
+}
+.answer-desc {
+  display: flex;
+  gap: 10px;
+  margin-top: 13px;
+  padding: 0 5px;
+}
+.answer-desc b {
+  color: var(--dark-purple);
+  font-weight: normal;
+}
+.answer-desc p {
+  color: var(--light-gray);
+  font-size: 15px;
+  line-height: 1.5em;
+}
+.answer-doctor {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.answer-doctor .thum {
+  width: 50px;
+  height: 50px;
+}
+.answer-doctor .thum img {
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+}
+.answer-doctor .desc h4 {
+  font-size: 14px;
+}
+.answer-doctor .desc h4 span {
+  display: block;
+  font-size: 11px;
+  color: var(--light-gray);
+}
+.answer-detail {
+  overflow: hidden;
+  align-items: center;
+  border-top: 1px solid var(--gainsboro);
+  margin-top: 15px;
+  padding-top: 7px;
+}
+.selected-answer {
+  font-size: 13px;
+  float: left;
+  transform: translateY(6px);
+}
+.selected-answer:before {
+  content: "\F4EB";
+  font-family: bootstrap-icons;
+  margin-right: 7px;
+  display: inline-block;
+  transform: translateY(1px);
+  color: var(--dark-purple);
+  font-weight: bold;
+}
+.answer-btns {
+  float: right;
+}
+.btn-like:after {
+  content: "\F417";
+  font-family: bootstrap-icons;
+  font-size: 16px;
+  color: var(--dark-gray);
+  transform: translateY(2px);
+  display: inline-block;
+  margin-right: 9px;
+}
+.btn-like.active:after {
+  content: "\F415";
+  font-family: bootstrap-icons;
+  color: crimson;
+}
+.btn-all-answer {
+  width: 100%;
+  padding: 6px;
+  font-size: 12px;
+  margin-top: 10px;
+  color: var(--dark-gray);
+}
+.btn-all-answer:after {
+  content: "\F282";
+  font-family: bootstrap-icons;
+  margin-left: 5px;
+  display: inline-block;
+  transform: translateY(1px);
+  font-size: 11px;
+}
+/* answer-hide */
+.answer-hide .answer-item {
+  display: none;
+}
+.btn-all-answer.active:after {
+  transform: rotate(180deg);
+}
+
+/* ##### Front Page ##### */
+.front-content {
+  padding-bottom: 100px;
+}
+/* Header Front */
+.header-front {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.header-front .logo {
+  font-size: 30px;
+  color: var(--dark-purple);
+}
+.btn-notice {
+  display: inline-block;
+  position: relative;
+}
+.btn-notice i {
+  font-size: 23px;
+  color: var(--light-black);
+}
+.btn-notice em {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: crimson;
+  position: absolute;
+  top: 4px;
+  right: -1px;
+}
+/* Go to Mypage */
+.go-to-mypage {
+  font-size: 17px;
+  font-weight: 600;
+  font-family: var(--main-kr);
+  padding: 3px 20px;
+}
+.go-to-mypage:after,
+.doctor-talk-section-title:after {
+  content: "\F285";
+  font-family: bootstrap-icons;
+  display: inline-block;
+  font-size: 14px;
+  transform: translateY(1px);
+  margin-left: 8px;
+}
+/* Pet Card */
+.pet-card-item {
+  display: flex !important;
+  align-items: center;
+  gap: 17px;
+  padding: 20px 15px;
+  height: 135px;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: var(--gloudy-purple);
+}
+.pet-card-plus {
+  position: relative;
+}
+.pet-card-plus span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--light-black);
+  font-size: 18px;
+}
+.pet-card-plus span:before {
+  content: "\F64D";
+  font-family: bootstrap-icons;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 21px;
+  transform: translateY(3px);
+}
+.pet-card-item-thum {
+  width: 85px;
+  height: 85px;
+}
+.pet-card-item-thum img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+.pet-card-item-desc {
+  flex: 1;
+}
+.pet-card-info {
+  display: flex;
+  justify-content: space-between;
+}
+.pet-card-info .btn-detail {
+  transform: translateX(10px);
+}
+.name-gender i {
+  font-size: 13px;
+  margin-left: 3px;
+  display: inline-block;
+  transform: translateY(-1px);
+}
+.male {
+  color: royalblue;
+}
+.female {
+  color: crimson;
+}
+.age-species {
+  margin: 10px 0;
+}
+.age-species span {
+  font-size: 14px;
+}
+.age-species span:after {
+  content: "|";
+  font-size: 10px;
+  display: inline-block;
+  transform: translateY(-2px);
+  margin-left: 4px;
+  color: var(--light-gray);
+}
+.age-species span:last-child::after {
+  display: none;
+}
+.age-species span em {
+  font-style: normal;
+  font-size: 12px;
+  color: var(--dark-gray);
+  margin-left: 2px;
+}
+.btn-pet-note {
+  width: 100%;
+  background-color: var(--light-purple);
+  color: #fff;
+  border-radius: 5px;
+  padding: 2px;
+}
+/* Pet Card Slick Slider Custom */
+.pet-card-slider .slick-arrow {
+  display: none !important;
+}
+.pet-card-slider .slick-dots {
+  bottom: -6px;
+}
+.pet-card-slider .slick-dots li {
+  margin: -2px;
+}
+.pet-card-slider .slick-dots li button:before {
+  transform: scale(1.4);
+}
+.pet-card-slider .slick-dots li.slick-active button:before {
+  color: var(--dark-purple);
+}
+/* Front Shortcut */
+.front-shortcut {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.front-shortcut .shortcut-item em {
+  width: 50px;
+  height: 50px;
+}
+.front-shortcut .shortcut-item em i {
+  line-height: 45px;
+}
+/* Front Banner */
+.front-banner-slider {
+  padding: 0 10px;
+}
+.front-banner-slider a img {
+  width: 100%;
+  display: block;
+}
+.front-banner-slider .slick-arrow {
+  display: none !important;
+}
+.front-banner-slider .slick-slide {
+  margin: 0 10px;
+}
+
+/* Doctor Talk Section */
+.doctor-talk-section {
+  margin-top: 15px;
+  padding: 10px;
+}
+.doctor-talk-section-title {
+  font-size: 17px;
+  font-family: var(--main-kr);
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.doctor-talk-section-title:before {
+  content: "🔥";
+  margin-right: 3px;
+}
+.doctor-talk-item {
+  border: 1px solid var(--light-gray);
+  margin-top: 10px;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+.doctor-talk-item h4 {
+  font-weight: 600;
+  font-size: 15px;
+}
+.doctor-talk-item p {
+  font-size: 14px;
+  margin-top: 7px;
+  color: var(--light-gray);
+  line-height: 1.6em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.doctor-talk-slider .slick-arrow {
+  display: none !important;
+}
+.doctor-talk-slider .slick-slide {
+  margin: 0 10px;
+}
+.doctor-talk-slider .slick-dots {
+  bottom: -30px;
+}
+.doctor-talk-slider .slick-dots li {
+  margin: 0px;
+}
+.doctor-talk-slider .slick-dots li button:before {
+  transform: scale(1.5);
+}
+
+/* ##### Front Banner Event ##### */
+.event-page-content {
+  padding: 15px;
+}
+.event-page-content img {
+  width: 100%;
+}
+.event-btns {
+  margin-top: 15px;
+}
+.btn-event {
+  width: 100%;
+  padding: 17px;
+  margin-bottom: 15px;
+}
+
+/* ##### Register Pet ##### */
+.register-pet-content {
+  padding: 20px;
+  font-family: var(--main-kr);
+}
+/* Common CSS */
+.register-pet-content input[type="text"] {
+  border: 1px solid var(--gainsboro);
+}
+.register-pet-content input[type="radio"] {
+  display: none;
+}
+.register-pet-content label {
+  margin-right: 7px;
+}
+.register-pet-content .custom-chk {
+  margin-right: 3px;
+}
+.register-field {
+  margin-bottom: 25px;
+}
+.register-field b {
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: block;
+}
+.register-field b sup {
+  color: crimson;
+}
+.register-breed input,
+.register-special input {
+  width: 100%;
+  padding: 13px;
+  border-radius: 5px;
+}
+.species-items label,
+.gender-items label {
+  font-size: 14px;
+}
+/* photo & name */
+.register-photo-name {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.register-photo {
+  width: 80px;
+  height: 80px;
+  border: 1px solid var(--gainsboro);
+  background-color: #fafafa;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 80px;
+  font-size: 22px;
+}
+.register-photo i {
+  color: var(--light-gray);
+}
+.register-name {
+  flex: 1;
+}
+.register-name input {
+  width: 100%;
+  padding: 13px;
+  border-radius: 5px;
+}
+/* Species */
+.species-items {
+  display: flex;
+}
+.register-species-item {
+  flex: 1.7;
+}
+.register-species-others {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  transform: translateY(2px);
+}
+.register-species-others input {
+  width: 100%;
+  padding: 4px;
+  border-radius: 5px;
+}
+/* Birth */
+.birth-items {
+  display: flex;
+  gap: 10px;
+}
+.birth-items input {
+  width: 33%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid var(--gainsboro);
+}
+/* button */
+.btn-register {
+  background-color: var(--light-purple);
+  color: #fff;
+  font-size: 15px;
+  margin-top: 5px;
+}
+/* Placeholder Effect */
+.register-pet-content input[type="text"]::placeholder {
+  color: var(--light-gray);
+  transition: 0.35s;
+}
+.register-pet-content input[type="text"]:focus::placeholder {
+  opacity: 0;
+}
+.register-pet-content input:focus {
+  border-color: var(--dark-purple);
+}
+/* Alternative Text CSS */
+.alt-text {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+}
